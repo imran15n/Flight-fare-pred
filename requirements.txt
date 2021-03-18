@@ -25,3 +25,4 @@ urllib3
 sklearn
 jsonify
 gunicorn
+openpyxl
