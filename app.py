@@ -1,5 +1,7 @@
 from flask import Flask, request, render_template
 from flask_cors import cross_origin
+import jsonify
+import requests
 import sklearn
 import pickle
 import pandas as pd
@@ -9,7 +11,7 @@ model = pickle.load(open("flight_rf.pkl", "rb"))
 
 
 
-@app.route("/")
+@app.route("/", methods = ['GET'])
 @cross_origin()
 def home():
     return render_template("home.html")
