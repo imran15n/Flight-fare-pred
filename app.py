@@ -12,7 +12,7 @@ model = pickle.load(open("flight_rf.pkl", "rb"))
 
 
 @app.route('/')
-def home():
+def Home():
     return render_template('home.html')
 
 
