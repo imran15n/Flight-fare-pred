@@ -11,16 +11,14 @@ model = pickle.load(open("flight_rf.pkl", "rb"))
 
 
 
-@app.route("/")
-@cross_origin()
+@app.route('/')
 def home():
-    return render_template("home.html")
+    return render_template('home.html')
 
 
 
 
 @app.route("/predict", methods = ["GET", "POST"])
-@cross_origin()
 def predict():
     if request.method == "POST":
 
@@ -361,7 +359,7 @@ def predict():
         return render_template('home.html',prediction_text="Your Flight price is Rs. {}".format(output))
 
 
-    return render_template("home.html")
+    # return render_template("home.html")
 
 
 
