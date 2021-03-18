@@ -26,4 +26,7 @@ sklearn
 jsonify
 gunicorn
 openpyxl
-bootstrap
+requests
+scikit-learn
+six
+cssselect
