@@ -5,7 +5,6 @@ click==7.1.2
 distlib==0.3.0
 Flask==1.1.2
 Flask-Cors==3.0.8
-gunicorn
 itsdangerous==1.1.0
 Jinja2==2.11.2
 joblib==0.15.1
@@ -25,3 +24,4 @@ threadpoolctl==2.1.0
 urllib3==1.25.9
 sklearn==0.0
 jsonify==0.5
+gunicorn
