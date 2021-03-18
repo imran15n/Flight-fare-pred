@@ -26,3 +26,4 @@ sklearn
 jsonify
 gunicorn
 openpyxl
+bootstrap
